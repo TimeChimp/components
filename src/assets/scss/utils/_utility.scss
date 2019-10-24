@@ -1,0 +1,38 @@
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.flex-align-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.flex-align-end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-align-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}

@@ -1,0 +1,47 @@
+// Helper function to replace characters in a string
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+    @return if(
+        $index,
+        str-slice($string, 1, $index - 1) + $replace +
+            str-replace(str-slice($string, $index + str-length($search)), $search, $replace),
+        $string
+    );
+}
+
+// Encode svg function by http://codepen.io/jakob-e/pen/doMoML
+@function svg-encode($svg) {
+    // Chunk up string in order to avoid "stack level too deep" error
+    $encoded: '';
+    $slice: 2000;
+    $index: 0;
+    $loops: ceil(str-length($svg) / $slice);
+    @for $i from 1 through $loops {
+        $chunk: str-slice($svg, $index, $index + $slice - 1);
+        // Encode
+        $chunk: str-replace($chunk, '"', "'");
+        $chunk: str-replace($chunk, '%', '%25');
+        $chunk: str-replace($chunk, '#', '%23');
+        $chunk: str-replace($chunk, '{', '%7B');
+        $chunk: str-replace($chunk, '}', '%7D');
+        $chunk: str-replace($chunk, '<', '%3C');
+        $chunk: str-replace($chunk, '>', '%3E');
+
+        $encoded: #{$encoded}#{$chunk};
+        $index: $index + $slice;
+    }
+    @return 'data:image/svg+xml,#{$encoded}';
+}
+
+@function checkmark() {
+    $start: '<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg">';
+    $content: '<g id="CheckActive" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+         <g transform="translate(1.500000, 1.500000)">
+             <path d="M15,7.5 C15,11.6421 11.6421,15 7.5,15 C3.3579,15 0,11.6421 0,7.5 C0,3.3579 3.3579,0 7.5,0 C11.6421,0 15,3.3579 15,7.5" id="Background"></path>
+            <path d="M14.55321,4.94574 C14.26431,4.14864 13.84431,3.41484 13.31901,2.76984 L7.51581,8.57304 L4.10511,5.16294 L2.39991,6.86784 L7.51581,11.98314 L14.55321,4.94574 Z" id="Symbol" fill="#FFFFFF"></path>
+         </g>
+    </g>';
+    $end: '</svg>';
+
+    @return svg-encode('#{$start}#{$content}#{$end}');
+}

@@ -1,0 +1,71 @@
+:root {
+    // theme
+    --color-primary-ultra-light: #efedff;
+    --color-primary-light: #aca3ff;
+    --color-primary: #6559d2;
+    --color-primary-dark: #39327f;
+}
+
+// colors
+$color-white: #fff;
+$color-black: #000;
+
+$color-green-light: #b9fff1;
+$color-green: #33d5b4;
+$color-green-dark: #25af94;
+
+$color-purple-ultra-light: #efedff;
+$color-purple-light: #aca3ff;
+$color-purple: #6559d2;
+$color-purple-dark: #39327f;
+
+$color-red-ultra-light: #ffebef;
+$color-red-light: #ffb1c0;
+$color-red: #fc6280;
+$color-red-dark: #cc415d;
+
+$color-yellow-light: #ffe3b9;
+$color-yellow: #feb64d;
+$color-yellow-dark: #ee9d23;
+
+$color-blue: #5296e4;
+$color-blue-light: #b9d9ff;
+
+$color-grey-hyper-light: #f8f8f8;
+$color-grey-ultra-light: #f6f6f6;
+$color-grey-super-light: #f2f2f2;
+$color-grey-light: #ebebeb;
+$color-grey: #d7d7d7;
+$color-grey-dark: #9b9b9b;
+$color-grey-ultra-dark: #4a4a4a;
+
+$label-yellow: #f5a623;
+$label-yellow-dark: #f5bb5b;
+$label-green: #55efcf;
+$label-green-dark: #2db095;
+$label-red-dark: #d0021b;
+$label-red: #fc6280;
+$label-grey: #777;
+$label-grey-dark: #6b6b6b;
+$label-blue: #5bc0de;
+$label-blue-dark: #51acc7;
+
+// box shadow
+$box-shadow-light: 0 0 1rem 3px rgba(165, 188, 211, 0.2);
+$box-shadow: 0 3px 20px 5px rgba(169, 174, 180, 0.2);
+$box-shadow-inset: inset 3px 20px 5px rgba(169, 174, 180, 0.2);
+
+// transition
+$tc-transition-2: all 0.2s ease-in-out;
+$tc-transition-3: all 0.3s ease-in-out;
+$tc-transition-4: all 0.4s ease-in-out;
+
+$tc-transition-3-delay: all 0.3s ease-in-out 0.25s;
+
+// font
+$font-family: 'Source Sans Pro';
+
+// border radius
+$border-radius-field: 3px;
+$border-radius: 5px;
+$modal-radius: 5px 0 0 5px;

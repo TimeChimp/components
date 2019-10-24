@@ -1,0 +1,217 @@
+.fade-enter-active {
+    transition: all 0.2s;
+}
+
+.fade-leave-active {
+    transition: all 0.2s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+/* action menu background fade */
+
+.action-fade-enter-active,
+.action-fade-leave-active {
+    transition: all 0.3s ease-in;
+}
+
+.action-fade-enter,
+.action-fade-leave-to {
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* delayed enter */
+
+.delay-enter-active,
+.delay-leave-active {
+    transition: all 0.1s linear 1s;
+}
+
+.delay-enter,
+.delay-leave {
+    opacity: 0;
+}
+
+/* side slide */
+
+.slide-fade-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+/* side slide left */
+
+.slide-left-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-left-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-left-enter,
+.slide-left-leave-to {
+    transform: translateX(2rem);
+    opacity: 0;
+}
+
+/* side slide right */
+
+.slide-right-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-right-leave-active {
+    transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-right-enter,
+.slide-right-leave-to {
+    transform: translateX(-2rem);
+    opacity: 0;
+}
+
+/* top slide */
+
+.slide-down-enter-active,
+.slide-down-leave-active {
+    transition: all 0.3s ease; // cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-down-move {
+    transition: transform 0.3s ease 0.2s;
+}
+
+.slide-down-enter {
+    transform: translateY(-5rem);
+    opacity: 0;
+}
+
+.slide-down-leave-to {
+    transform: translateY(5rem);
+    opacity: 0;
+}
+
+/* top slide notification */
+
+.slide-down-notification-enter-active,
+.slide-down-notification-leave-active {
+    transition: all 0.3s ease; // cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-down-notification-enter,
+.slide-down-notification-leave-to {
+    transform: translateY(-5rem);
+    opacity: 0;
+}
+
+/* bottom slide */
+
+.slide-up-notification-enter-active,
+.slide-up-notification-leave-active {
+    transition: all 0.3s ease; // cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-up-notification-enter,
+.slide-up-notification-leave-to {
+    transform: translateY(5rem);
+    opacity: 0;
+}
+
+/* mobile actions */
+
+.mobile-actions-enter-active,
+.mobile-actions-leave-active {
+    transition: opacity 0.5s;
+}
+
+.mobile-actions-leave-active {
+    transition: transform 0.3s ease-in; // cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.mobile-actions-enter-active {
+    transition: transform 0.3s ease-out; // cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.mobile-actions-enter,
+.mobile-actions-leave-to {
+    transform: translateY(100%);
+    opacity: 0;
+}
+
+/* top slide date */
+
+.slide-down-date-enter-active,
+.slide-down-date-leave-active {
+    transition: all 0.3s ease;
+}
+
+.slide-down-date-enter {
+    transform: translateY(-2rem);
+    opacity: 0;
+}
+
+.slide-down-date-leave-to {
+    transform: translateY(2rem);
+    opacity: 0;
+}
+
+/* nested slide-in */
+
+.slide-in-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-in-leave-active {
+    position: absolute;
+    width: 100%;
+}
+
+.slide-in-move {
+    transition: transform 0.3s ease;
+}
+
+.slide-in-enter,
+.slide-in-leave-to {
+    transform: translateY(-2rem);
+    opacity: 0;
+}
+
+/* side slide searchbar */
+
+.slide-search-enter-active {
+    transition: all 0.3s ease;
+}
+
+.slide-search-leave-active {
+    transition: all 0.2s ease-in;
+}
+
+.slide-search-enter,
+.slide-search-leave-to {
+    transform: translateX(10%);
+    opacity: 0;
+}
+
+
