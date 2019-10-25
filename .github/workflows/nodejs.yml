@@ -25,9 +25,9 @@ jobs:
       run: npm test
     - name: Bump package version
       run: | 
-      git config --global user.email "hidde95@gmail.com"
-      git config --global user.name "hiddeottens"
-      npm version patch
+        git config --global user.email "hidde95@gmail.com"
+        git config --global user.name "hiddeottens"
+        npm version patch
     - name: Publish
       run: npm publish
       env:
