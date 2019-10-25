@@ -28,8 +28,8 @@ jobs:
       run: npm test
     - name: Bump package version
       run: | 
-        git config --global user.email "infra@timechimp.com"
-        git config --global user.name "TC Bot"
+        git config user.email "infra@timechimp.com"
+        git config user.name "TC Bot"
         npm version patch
         git push origin HEAD
     - name: Publish
