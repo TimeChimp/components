@@ -19,6 +19,7 @@ module.exports = ({ config, mode }) => {
                     prependData: `
                         @import '@/assets/scss/base/_variables.scss';
                         @import '@/assets/scss/base/_generic.scss';
+                        @import '@/assets/scss/base/_fonts.scss';
 						@import '@/assets/scss/utils/_mixins.scss';
 					`,
                 },

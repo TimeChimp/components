@@ -9,7 +9,7 @@ storiesOf("Button", module).add("Default", () => ({
   template: `
             <tc-button :button-class="['button__primary']">
                 Button
-            />
+            </tc-button>
         `
 }));
 
