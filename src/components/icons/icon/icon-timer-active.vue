@@ -1,0 +1,50 @@
+<template>
+  <g>
+    <circle
+      class="timer-active-bg"
+      fill="transparent"
+      cx="100.8"
+      cy="109.8"
+      r="78.8"
+    />
+
+    <circle
+      fill="none"
+      stroke="#6559D2"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      cx="100.8"
+      cy="109.8"
+      r="78.8"
+    />
+    <path
+      fill="#FFF"
+      stroke="#6559D2"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      d="M79.6 131.9h42.2v26.4H79.6z"
+    />
+    <path
+      fill="none"
+      stroke="#6559D2"
+      stroke-width="17"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      d="M100.8 62.5v39.3"
+    />
+    <path
+      fill="none"
+      stroke="#6559D2"
+      stroke-width="15"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-miterlimit="10"
+      d="M20 47.3L43.3 24M83.5 9.7h33"
+    />
+  </g>
+</template>

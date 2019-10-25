@@ -1,0 +1,43 @@
+.badge {
+    min-height: 1rem;
+    min-width: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    left: 100%;
+    margin: 0;
+    background: var(--color-primary);
+    background: $color-purple;
+    background-clip: padding-box;
+    border-radius: 11rem;
+    box-shadow: 0 0 0 0.1rem $color-white;
+    color: $color-white;
+    display: inline-block;
+}
+
+.badge__small {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    padding: 0.3rem 0.6rem;
+}
+
+.badge__medium {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    padding: 0.4rem 0.7rem;
+}
+
+.badge__large {
+    font-size: 1.4rem;
+    line-height: 1.2rem;
+    padding: 0.4rem 0.7rem;
+}
+
+.badge__top-right {
+    position: absolute;
+    top: calc(0px - (1rem / 2));
+    left: calc(100% - (1rem / 2));
+}
+
+.badge__right {
+    margin-left: 0.3rem;
+}
