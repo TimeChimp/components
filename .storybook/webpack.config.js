@@ -17,7 +17,8 @@ module.exports = ({ config, mode }) => {
                 options: {
                     implementation: require('sass'),
                     prependData: `
-						@import '@/assets/scss/base/_variables.scss';
+                        @import '@/assets/scss/base/_variables.scss';
+                        @import '@/assets/scss/base/_generic.scss';
 						@import '@/assets/scss/utils/_mixins.scss';
 					`,
                 },
