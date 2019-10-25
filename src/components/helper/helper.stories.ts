@@ -7,9 +7,6 @@ storiesOf("Helper", module).add("Default", () => ({
   components: {
     TcHelper
   },
-  data() {
-    return {};
-  },
   template: `
             <tc-helper
                 text="Something cool"
@@ -17,9 +14,9 @@ storiesOf("Helper", module).add("Default", () => ({
         `
 }));
 
-const Helper = () => ({
-  components: { TcHelper },
-  template: `<tc-helper text="Something cool" />`
-});
+// const Helper = () => ({
+//   components: { TcHelper },
+//   template: `<tc-helper text="Something cool" />`
+// });
 
-export default Helper;
+// export default Helper;
