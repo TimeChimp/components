@@ -1,0 +1,105 @@
+.icon {
+    width: 2.25rem;
+}
+
+.icon .active {
+    display: none;
+}
+
+// background
+.st0 {
+    fill: $color-white;
+}
+
+.st1 {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 45;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st2 {
+    fill: $color-white;
+}
+
+.st3 {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st4 {
+    fill: $color-white;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st5 {
+    fill: var(--color-primary);
+    fill: $color-purple;
+}
+
+.st6 {
+    fill: none;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-miterlimit: 10;
+}
+
+.st7 {
+    fill: $color-white;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-miterlimit: 10;
+}
+
+.st8 {
+    fill: $color-red;
+}
+
+.a,
+.b {
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+}
+
+.st9 {
+    fill: $color-white;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st10 {
+    fill: $color-white;
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 14;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
+}
+
+.st11 {
+    stroke: var(--color-primary);
+    stroke: $color-purple;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
