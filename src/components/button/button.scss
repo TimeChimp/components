@@ -3,6 +3,8 @@
     align-items: center;
     justify-content: center;
 
+    position: relative;
+
     background: var(--color-primary-ultra-light);
     background: $color-purple-ultra-light;
 
@@ -135,7 +137,12 @@
 
 .button__delete {
     color: $color-red;
-    border-color: $color-red;
+    background: $color-white;
+    border: 1px solid $color-red;
+
+    &:hover {
+        background: $color-red-ultra-light;
+    }
 }
 
 .button__left-icon {
