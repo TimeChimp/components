@@ -23,6 +23,8 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
+    - name: Bump package version
+      run: npm version patch
     - name: Publish
       run: npm publish
       env:
