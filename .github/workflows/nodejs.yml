@@ -28,6 +28,7 @@ jobs:
         git config --global user.email "hidde95@gmail.com"
         git config --global user.name "hiddeottens"
         npm version patch
+        git push
     - name: Publish
       run: npm publish
       env:
