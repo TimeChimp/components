@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/vue";
 import TcButton from "./button.vue";
 import TcIcon from "../icons/icon.vue";
 
-storiesOf("Button", module)
+storiesOf("Buttons|Button", module)
   .add("Primary", () => ({
     components: {
       TcButton

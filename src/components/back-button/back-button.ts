@@ -1,4 +1,4 @@
-import { Vue, Component, Prop } from "@/vue-script";
+import { Vue, Component } from "vue-property-decorator";
 
 import { TcIcon } from "../icons";
 

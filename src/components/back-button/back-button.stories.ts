@@ -3,7 +3,7 @@ import { storiesOf } from "@storybook/vue";
 
 import TcBackButton from "./back-button.vue";
 
-storiesOf("Button", module).add("Default", () => ({
+storiesOf("Buttons|Back button", module).add("Default", () => ({
   components: {
     TcBackButton
   },
