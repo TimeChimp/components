@@ -26,14 +26,16 @@ jobs:
       run: npm install
     - name: Test
       run: npm test
-    - name: Bump package version
-      run: | 
-        git config --global user.email "infra@timechimp.com"
-        git config --global user.name "TC Bot"
-        npm version patch
-        git push origin HEAD
+    # - name: Bump package version
+    #   run: |
+    #     git switch -c master
+    #     git config user.name "timechimp-bv"
+    #     git config user.email "hidde95@gmail.com"
+    #     npm version patch
+    #     git push "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY"
     - name: Publish
       run: npm publish
       env:
         CI: true
         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        # GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
