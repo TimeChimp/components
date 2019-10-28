@@ -84,7 +84,7 @@ const IconUnderline = () => import("./icon/icon-underline.vue");
   }
 })
 export default class TcIcon extends Vue {
-  @Prop() private name!: string;
+  @Prop({ required: true }) private name!: string;
   @Prop({ default: 18 }) private size!: string | number;
   @Prop() private width?: string | number;
   @Prop() private height?: string | number;
@@ -97,9 +97,8 @@ export default class TcIcon extends Vue {
   private get viewBox(): string {
     switch (this.name) {
       case "arrow":
-        return "0 0 5 7";
       case "close":
-        return "0 0 15 14";
+        return "0 0 18 18";
       case "time":
         return "0 0 500 575";
       case "error":

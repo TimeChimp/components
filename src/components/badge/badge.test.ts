@@ -10,10 +10,15 @@ const factory = (values = {}) => {
 };
 
 describe("Badge", () => {
-  it("renders number of notifications", () => {
-    const wrapper = factory({
-      value: 9
-    });
+  const wrapper = factory({
+    value: 9
+  });
+
+  it("Renders a badge", () => {
+    expect(wrapper.contains(".badge")).toBe(true);
+  });
+
+  it("Renders number of notifications", () => {
     expect(wrapper.find(".badge").text()).toEqual("9");
   });
 });

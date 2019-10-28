@@ -1,14 +1,6 @@
 <template>
-  <g style="fill:currentColor">
-    <g transform="translate(-1 -1)translate(8.5 8)rotate(45)">
-      <rect x="-1.5" y="-8" width="3" height="16" />
-      <rect
-        transform="translate(-8.5 -8)translate(8.5 8)rotate(90)"
-        x="-1.5"
-        y="-8"
-        width="3"
-        height="16"
-      />
-    </g>
+  <g fill-rule="nonzero">
+    <path d="M11.873 4.802l1.326 1.326-7.071 7.07-1.326-1.325z" />
+    <path d="M13.198 11.873l-1.326 1.326-7.07-7.071 1.325-1.326z" />
   </g>
 </template>
