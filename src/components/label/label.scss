@@ -1,0 +1,31 @@
+.label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $color-grey-dark;
+    border-radius: 2px;
+
+    padding: 0 5px;
+    margin: 0;
+}
+
+.label--micro {
+    font-size: 1rem;
+}
+
+.label--small {
+    font-size: 1rem;
+}
+
+.label--medium {
+    font-size: 1.25rem;
+}
+
+.label--large {
+    font-size: 1.75rem;
+}
+
+.label__text {
+    color: $color-grey-dark;
+}
