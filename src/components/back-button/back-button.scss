@@ -1,0 +1,22 @@
+.back-button {
+    @include flex-center-align;
+
+    padding: 1.25rem;
+    border-radius: 5rem;
+    background: $color-grey-light;
+    cursor: pointer;
+    transition: $tc-transition-2;
+
+    &:hover {
+        background: $color-purple-ultra-light;
+        transition: $tc-transition-2;
+    }
+
+    &:hover > .back-button__arrow {
+        color: $color-purple;
+    }
+}
+
+.back-button__arrow {
+    color: $color-grey-dark;
+}
