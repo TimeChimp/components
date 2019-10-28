@@ -1,6 +1,6 @@
 .badge {
-    min-height: 1rem;
-    min-width: 1rem;
+    height: 1rem;
+    width: 1rem;
     text-align: center;
     white-space: nowrap;
     left: 100%;
@@ -30,14 +30,4 @@
     font-size: 1.4rem;
     line-height: 1.2rem;
     padding: 0.4rem 0.7rem;
-}
-
-.badge__top-right {
-    position: absolute;
-    top: calc(0px - (1rem / 2));
-    left: calc(100% - (1rem / 2));
-}
-
-.badge__right {
-    margin-left: 0.3rem;
 }

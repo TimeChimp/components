@@ -1,5 +1,5 @@
 <template>
-  <span class="badge" :class="[`badge__${size}`, `badge__${position}`]">
+  <span class="badge" :class="[`badge__${size}`]">
     {{ value }}
   </span>
 </template>
