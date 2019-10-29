@@ -1,25 +1,15 @@
 <template>
     <div class="tabs-tem">
-        <!-- Use icon system -->
         <div class="tabs-tem__icons">
-            <div
-                id="register-time"
-                @click="tab = 'time'"
-            >
+            <div @click="tab = 'time'">
                 <time-icon :class="{ 'svg-time-active': tab === 'time' }" />
             </div>
 
-            <div
-                id="register-expense"
-                @click="tab = 'expense'"
-            >
+            <div @click="tab = 'expense'">
                 <expense-icon :class="{ 'svg-time-active': tab === 'expense' }" />
             </div>
 
-            <div
-                id="register-mileage"
-                @click="tab = 'mileage'"
-            >
+            <div @click="tab = 'mileage'">
                 <mileage-icon :class="{ 'svg-time-active': tab === 'mileage' }" />
             </div>
         </div>

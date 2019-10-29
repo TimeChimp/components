@@ -14,8 +14,6 @@ const MileageIcon = () => import('./icons/mileage.vue');
     },
 })
 export default class TcTabsTem extends Vue {
-    @Prop() private expenses!: boolean;
-    @Prop() private mileages!: boolean;
     @Prop({ default: 'time' }) private value!: View;
 
     private get tab(): View {
