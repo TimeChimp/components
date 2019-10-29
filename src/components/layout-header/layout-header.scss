@@ -1,0 +1,28 @@
+.layout-header {
+    padding: 0 3rem;
+    height: 7rem;
+}
+
+.layout-header__title {
+    color: $color-grey-ultra-dark;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.layout-header > .col > .button:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.layout-header > .col > .dropdown:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.layout-header__right {
+    display: flex;
+    align-items: center;
+}
+
+.layout-header__right > *:not(:last-child) {
+    margin-right: 1rem;
+}

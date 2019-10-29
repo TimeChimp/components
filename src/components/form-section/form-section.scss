@@ -1,0 +1,33 @@
+.form-section {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    margin-bottom: 0.25rem;
+}
+
+.form-section__header {
+    display: flex;
+    align-items: center;
+
+    margin: 0 2.5rem 1.25rem 1.5rem;
+}
+
+.form-section__title {
+    flex: 0 0 auto;
+    color: $color-grey-ultra-dark;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    padding-right: 2rem;
+}
+
+.form-section__line {
+    width: 100%;
+    border-top: 1px solid $color-grey;
+}
+
+.form-section__forms {
+    align-self: center;
+}

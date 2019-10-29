@@ -1,0 +1,44 @@
+.label-status {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 30px;
+    border: 1px solid $color-grey;
+    color: $color-grey-ultra-dark;
+    border-radius: 3px;
+
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin: 0;
+}
+
+.label-status__registered {
+    color: $color-white;
+    background: $label-yellow;
+    border: 1px solid $label-yellow-dark;
+}
+
+.label-status__approved {
+    color: $color-white;
+    background: $label-green;
+    border: 1px solid $label-green-dark;
+}
+
+.label-status__rejected {
+    color: $color-white;
+    background: $label-red;
+    border: 1px solid $label-red-dark;
+}
+
+.label-status__invoiced {
+    color: $color-white;
+    background: $label-grey;
+    border: 1px solid $label-grey-dark;
+}
+
+.label-status__written-off {
+    color: $color-white;
+    background: $label-blue;
+    border: 1px solid $label-blue-dark;
+}
