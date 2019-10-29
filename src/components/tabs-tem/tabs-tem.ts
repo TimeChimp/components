@@ -1,22 +1,28 @@
 import { Vue, Component, Prop } from 'vue-property-decorator';
 
-@Component({})
+type View = 'time' | 'expense' | 'mileage';
+
+const TimeIcon = () => import('./icons/time.vue');
+const ExpenseIcon = () => import('./icons/expense.vue');
+const MileageIcon = () => import('./icons/mileage.vue');
+
+@Component({
+    components: {
+        TimeIcon,
+        ExpenseIcon,
+        MileageIcon,
+    },
+})
 export default class TcTabsTem extends Vue {
     @Prop() private expenses!: boolean;
     @Prop() private mileages!: boolean;
-    @Prop({
-        default: 'time',
-        validator(value) {
-            return ['time', 'expense', 'mileage'].indexOf(value) > -1;
-        },
-    })
-    private value!: string;
+    @Prop({ default: 'time' }) private value!: View;
 
-    private get tab(): string {
+    private get tab(): View {
         return this.value;
     }
 
-    private set tab(value: string) {
+    private set tab(value: View) {
         this.$emit('input', value);
     }
 }
