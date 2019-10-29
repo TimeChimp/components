@@ -1,0 +1,36 @@
+.toggle-column {
+    transition: $tc-transition-2;
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid $color-grey-light;
+    border-radius: $border-radius-field;
+    color: $color-grey;
+    padding: 1.35rem 1rem;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 1.5rem;
+    }
+
+    &:hover {
+        border: 1px solid $color-grey;
+        color: $color-grey-dark;
+        transition: $tc-transition-2;
+    }
+}
+
+.toggle-column__handle {
+    margin-right: 1rem;
+    cursor: move;
+}
+
+.toggle-column--active {
+    color: $color-purple;
+    border: 1px solid $color-purple;
+
+    &:hover {
+        color: $color-purple;
+        border: 1px solid $color-purple;
+    }
+}
