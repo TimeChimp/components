@@ -1,0 +1,9 @@
+.tabs {
+    @include flex-align;
+}
+
+.tabs__list {
+    display: flex;
+    font-weight: 600;
+    margin-left: 1.5rem;
+}
