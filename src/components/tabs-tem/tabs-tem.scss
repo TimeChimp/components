@@ -1,0 +1,186 @@
+.tabs-tem {
+    @include flex-center-align;
+    flex-direction: column;
+
+    padding: 2.5rem 0 2.5rem 0;
+
+    // time
+    .svg-time,
+    .svg-expense,
+    .svg-mileage {
+        width: 2rem;
+        cursor: pointer;
+
+        &-bg {
+            transition: $tc-transition-4;
+            fill: transparent;
+        }
+
+        &-main {
+            transition: $tc-transition-4;
+            fill: $color-grey;
+        }
+    }
+
+    .svg-time {
+        transform: translateY(-0.2rem);
+    }
+
+    .svg-time:hover {
+        .svg-time-main {
+            transition: $tc-transition-4;
+            fill: $color-purple;
+        }
+
+        .svg-time-bg {
+            transition: $tc-transition-4;
+            fill: $color-purple-light;
+        }
+    }
+
+    .svg-time-active {
+        .svg-time-main {
+            fill: $color-purple;
+        }
+
+        .svg-time-bg {
+            fill: $color-purple-light;
+        }
+    }
+
+    .svg-time-active-outline {
+        .svg-time-main {
+            fill: $color-purple;
+        }
+    }
+
+    .svg-expense:hover {
+        .svg-expense-main {
+            transition: $tc-transition-4;
+            fill: $color-red;
+        }
+
+        .svg-expense-bg {
+            transition: $tc-transition-4;
+            fill: $color-red-light;
+        }
+    }
+
+    .svg-expense-active {
+        .svg-expense-main {
+            fill: $color-red;
+        }
+
+        .svg-expense-bg {
+            fill: $color-red-light;
+        }
+    }
+
+    .svg-mileage:hover {
+        .svg-mileage-main {
+            transition: $tc-transition-4;
+            fill: $color-yellow;
+        }
+
+        .svg-mileage-bg {
+            transition: $tc-transition-4;
+            fill: $color-yellow-light;
+        }
+    }
+
+    .svg-mileage-active {
+        .svg-mileage-main {
+            fill: $color-yellow;
+        }
+
+        .svg-mileage-bg {
+            fill: $color-yellow-light;
+        }
+    }
+
+    // normal
+    .svg-time-normal {
+        &-bg {
+            fill: transparent;
+        }
+
+        &-main {
+            fill: $color-purple;
+        }
+    }
+
+    .svg-expense-normal {
+        &-bg {
+            fill: transparent;
+        }
+
+        &-main {
+            fill: $color-red;
+        }
+    }
+
+    .svg-mileage-normal {
+        &-bg {
+            fill: transparent;
+        }
+
+        &-main {
+            fill: $color-yellow;
+        }
+    }
+}
+
+.tabs-tem__icons {
+    @include flex-center-align;
+
+    & > div:not(:last-child) {
+        margin-right: 3rem;
+    }
+}
+
+.tabs-tem__svg {
+    @include flex-center;
+}
+
+.tabs-tem__underline {
+    height: 4px;
+    width: 2rem;
+    border-radius: 20px;
+
+    transition: all 0.4s ease-in-out;
+}
+.tabs-tem__underline--time {
+    background: $color-purple;
+    transform: translateX(-5rem);
+}
+
+.tabs-tem__underline--expense {
+    background: $color-red;
+    transform: translateX(0);
+}
+
+.tabs-tem__underline--mileage {
+    background: $color-yellow;
+    transform: translateX(5rem);
+}
+
+.tabs-tem__title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.tabs-tem__title--time {
+    color: $color-purple;
+}
+
+.tabs-tem__title--expense {
+    color: $color-red;
+}
+
+.tabs-tem__title--mileage {
+    color: $color-yellow;
+}
