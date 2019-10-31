@@ -1,0 +1,29 @@
+.mobile-button-plus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10rem;
+    cursor: pointer;
+
+    height: 5rem;
+    width: 5rem;
+
+    color: $color-white;
+}
+
+.mobile-button-plus__time {
+    background: var(--color-primary);
+    background: $color-purple;
+    box-shadow: 0 2px 6px 0 #6559d2;
+}
+
+.mobile-button-plus__mileage {
+    background: $color-yellow;
+    box-shadow: 0 2px 6px 0 #feb64d;
+}
+
+.mobile-button-plus__expense {
+    background: $color-red;
+    box-shadow: 0 2px 6px 0 #fc6280;
+}

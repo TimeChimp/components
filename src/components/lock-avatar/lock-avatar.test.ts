@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils";
-import TcLockAvatar from "./lok-avatar.vue";
+import TcLockAvatar from "./lock-avatar.vue";
 
 const factory = (props = {}) => {
   return shallowMount(TcLockAvatar, {
