@@ -2,6 +2,9 @@ module.exports = {
   moduleFileExtensions: ["js", "jsx", "json", "vue", "ts", "tsx"],
   // preset: "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
   testMatch: ["**/components/**/*.test.(js|jsx|ts|tsx)"],
+  transformIgnorePatterns: [
+    "/node_modules/(?!@/timechimp-bv/helper-functions|date-fns-tz|date-fns)"
+  ],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1"
   },

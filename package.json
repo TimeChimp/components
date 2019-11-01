@@ -16,8 +16,10 @@
     "publish:npm": "npm version patch && npm publish --access public"
   },
   "dependencies": {
-    "@timechimp-bv/helper-functions": "^0.1.0",
+    "@timechimp-bv/helper-functions": "^0.1.2",
     "core-js": "^3.3.2",
+    "date-fns": "^2.6.0",
+    "date-fns-tz": "^1.0.8",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
     "vue-property-decorator": "^8.3.0"
