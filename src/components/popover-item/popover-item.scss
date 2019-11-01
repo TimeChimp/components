@@ -1,0 +1,19 @@
+.popover-item {
+    &:hover {
+        background: $color-grey-super-light;
+    }
+}
+
+.popover-item a {
+    color: $color-grey-ultra-dark;
+    background: transparent !important;
+    display: block;
+    letter-spacing: 0;
+    font-weight: 600 !important;
+    font-family: 'Source Sans Pro';
+    padding: 1rem 1.5rem;
+}
+
+.popover-item--warning {
+    color: $color-red !important;
+}
