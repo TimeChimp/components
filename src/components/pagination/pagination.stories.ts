@@ -2,7 +2,7 @@ import { storiesOf } from "@storybook/vue";
 
 import TcPagination from "./pagination.vue";
 
-storiesOf("Pagination", module)
+storiesOf("Navigation|Pagination", module)
   .add("Default", () => ({
     components: {
       TcPagination
