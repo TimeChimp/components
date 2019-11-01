@@ -112,14 +112,14 @@ storiesOf("Buttons|Button", module)
                 <tc-button :button-class="['button__primary']">
                     Button
 
-                    <tc-icon name="arrow" size="10" />
+                    <tc-icon name="arrow" size="15" />
                 </tc-button>
 
                 <h4>Secondary</h4>
                 <tc-button :button-class="['button__secondary']">
                     Button
 
-                    <tc-icon name="arrow" size="10" />
+                    <tc-icon name="arrow" size="15" />
                 </tc-button>
             </div>
         `
