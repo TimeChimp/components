@@ -1,0 +1,40 @@
+.section-tabs-button {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: $color-white;
+    border: 1px solid $color-grey;
+    padding: 5px;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.section-tabs-button__line {
+    position: absolute;
+    left: -12px;
+
+    width: 12px;
+    border-top: 1px solid $color-grey;
+}
+
+.section-tabs-button__inner {
+    flex: 0 0 auto;
+
+    font-weight: 600;
+    padding: 1px 2rem;
+    border-radius: 5rem;
+    transition: $tc-transition-3;
+
+    &:hover {
+        background: $color-purple;
+        color: $color-white;
+    }
+}
+
+.section-tabs-button__inner--active {
+    background: $color-purple;
+    color: $color-white;
+}
