@@ -5,18 +5,17 @@
     "type": "git",
     "url": "https://github.com/timechimp-bv/components.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
-    "build:storybook": "build-storybook"
+    "build:storybook": "build-storybook",
+    "publish": "npm version patch && npm publish --access public"
   },
   "dependencies": {
+    "@timechimp-bv/helper-functions": "^0.1.0",
     "core-js": "^3.3.2",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
@@ -52,8 +51,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
-      "pre-push": "npm version patch"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
