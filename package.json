@@ -1,6 +1,6 @@
 {
   "name": "@timechimp-bv/components",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "repository": {
     "type": "git",
     "url": "https://github.com/timechimp-bv/components.git"
@@ -12,7 +12,7 @@
     "lint": "vue-cli-service lint",
     "storybook": "start-storybook -p 6006",
     "build:storybook": "build-storybook",
-    "publish": "npm version patch && npm publish --access public"
+    "publish:npm": "npm version patch && npm publish --access public"
   },
   "dependencies": {
     "@timechimp-bv/helper-functions": "^0.1.0",
