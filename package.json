@@ -22,7 +22,8 @@
     "date-fns-tz": "^1.0.8",
     "vue": "^2.6.10",
     "vue-class-component": "^7.0.2",
-    "vue-property-decorator": "^8.3.0"
+    "vue-property-decorator": "^8.3.0",
+    "vue-slider-component": "^3.0.41"
   },
   "devDependencies": {
     "@babel/core": "^7.6.4",

@@ -1,8 +1,8 @@
 import { shallowMount } from "@vue/test-utils";
-import SectionTabsSection from "./section-tabs-button.vue";
+import TcSectionTabsButton from "./section-tabs-button.vue";
 
 const factory = (props = {}) => {
-  return shallowMount(SectionTabsSection, {
+  return shallowMount(TcSectionTabsButton, {
     propsData: {
       ...props
     }
