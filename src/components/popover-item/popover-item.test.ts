@@ -1,8 +1,8 @@
 import { shallowMount } from "@vue/test-utils";
-import TcPopover from "./popover.vue";
+import TcPopoverItem from "./popover-item.vue";
 
 const factory = (props = {}) => {
-  return shallowMount(TcPopover, {
+  return shallowMount(TcPopoverItem, {
     propsData: {
       ...props
     }
