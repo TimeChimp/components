@@ -1,0 +1,74 @@
+.progress-bar {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    border-radius: 290486px;
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    font-weight: 600;
+
+    &::-webkit-progress-bar {
+        background-color: $color-grey-super-light;
+        box-shadow: 0 0.25px 0.5px rgba(0, 0, 0, 0.25) inset;
+        border-radius: 290486px;
+    }
+
+    &::-webkit-progress-value {
+        background-color: $color-purple-light;
+        border-radius: 290486px;
+    }
+
+    &::-moz-progress-bar {
+        background-color: $color-grey-super-light;
+        box-shadow: 0 0.25px 0.5px rgba(0, 0, 0, 0.25) inset;
+        border-radius: 290486px;
+    }
+
+    &::-ms-fill {
+        background-color: $color-purple-light;
+        box-shadow: 0 0.25px 0.5px rgba(0, 0, 0, 0.25) inset;
+        border: none;
+        border-radius: 290486px;
+    }
+
+    &:after {
+        content: attr(value) '%';
+        position: absolute;
+        top: 0;
+        left: 15%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        color: $color-purple;
+    }
+}
+
+.progress-bar__small {
+    height: 1.5rem;
+
+    &:after {
+        line-height: 1.5rem;
+        font-size: 1.1rem;
+    }
+}
+
+.progress-bar__medium {
+    height: 2rem;
+
+    &:after {
+        line-height: 2rem;
+        font-size: 1.3rem;
+    }
+}
+
+.progress-bar__large {
+    height: 2.5rem;
+
+    &:after {
+        line-height: 2.5rem;
+        font-size: 1.4rem;
+    }
+}

@@ -1,0 +1,52 @@
+.slider-switch {
+    @include flex-align;
+    justify-content: space-around;
+
+    position: relative;
+
+    width: 100%;
+    height: 4rem;
+
+    padding: 0.2em;
+    background: $color-grey-super-light;
+    border-radius: 2rem;
+    box-shadow: inset 0 1px 5px -1px $color-grey;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider-switch__switcher {
+    @include flex-center-align;
+
+    position: absolute;
+    top: 0px;
+
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+
+    margin: 4px 4px 0 4px;
+    background: $color-white;
+    border-radius: 2rem;
+    box-shadow: $box-shadow-light;
+    transition: $tc-transition-2;
+}
+
+.slider-switch__section {
+    @include flex-center-align;
+    position: absolute;
+
+    width: calc(50% - 8px);
+    height: calc(100% - 8px);
+
+    margin: 4px 4px 0 4px;
+    top: 0px;
+    border-radius: 2rem;
+}
+
+.slider-switch__section--left {
+    left: 0px;
+}
+
+.slider-switch__section--right {
+    right: 0px;
+}

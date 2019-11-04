@@ -1,0 +1,49 @@
+.nothing-here {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+
+    opacity: 0.5;
+}
+
+.nothing-here--desktop {
+    height: 70%;
+}
+
+.nothing-here__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-5rem);
+}
+
+.a {
+    stop-color: #f2f2f2;
+}
+
+.z {
+    fill: #e6e6e6;
+}
+
+.c {
+    fill: #b3b3b3;
+}
+
+.d {
+    fill: #c2c2c2;
+}
+
+.e {
+    fill: none;
+    stroke-linejoin: round;
+    stroke-width: 2;
+    stroke: #3d3d3d;
+}
+
+.f {
+    fill: #4d4d4d;
+}

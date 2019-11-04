@@ -1,0 +1,37 @@
+.status-label {
+    height: 7.5px;
+    width: 8px;
+    border-radius: 50%;
+}
+
+.status-label--yellow {
+    background: $label-yellow;
+
+    &:hover {
+        background: $label-yellow-dark;
+    }
+}
+
+.status-label--green {
+    background: $label-green;
+
+    &:hover {
+        background: $label-green-dark;
+    }
+}
+
+.status-label--red {
+    background: $label-red;
+
+    &:hover {
+        background: $label-red-dark;
+    }
+}
+
+.status-label--grey {
+    background: $label-grey;
+
+    &:hover {
+        background: $label-grey-dark;
+    }
+}

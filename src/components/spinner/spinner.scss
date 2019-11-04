@@ -1,0 +1,46 @@
+.spinner {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    width: 4.8rem;
+    height: 3.5rem;
+    background: transparent;
+    display: block;
+}
+
+.spinner:before,
+.spinner:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    margin: -0.8rem 0 0 -0.8rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    border-color: var(--color-primary) transparent transparent;
+    border-color: $color-purple transparent transparent;
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 0 1px transparent;
+}
+
+@keyframes spinning {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(2turn);
+    }
+}
+
+.spinner:before {
+    animation: spinning 2.4s cubic-bezier(0.41, 0.26, 0.2, 0.62);
+    animation-iteration-count: infinite;
+}
+
+.spinner:after {
+    animation: spinning 2.4s cubic-bezier(0.51, 0.09, 0.21, 0.8);
+    animation-iteration-count: infinite;
+}
