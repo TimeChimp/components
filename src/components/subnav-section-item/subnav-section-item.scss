@@ -1,0 +1,40 @@
+.subnav-section-item {
+    border-left: 3px solid $color-white;
+}
+
+.subnav-section-item a {
+    @include flex-align;
+    justify-content: space-between;
+
+    color: $color-grey-ultra-dark;
+    font-size: 1.3rem;
+    letter-spacing: 0;
+    background: $color-white;
+    padding: 1.5rem 2rem;
+    position: relative;
+}
+
+.subnav-section-item__icon {
+    color: var(--color-primary);
+    color: $color-purple;
+    position: absolute;
+    right: 0;
+    top: 17px;
+    font-size: 1rem;
+}
+
+.subnav-section-item__active,
+.subnav-section-item:hover {
+    border-left: 3px solid var(--color-primary);
+    border-left: 3px solid $color-purple;
+
+    a {
+        color: $color-purple;
+        background: var(--color-grey-super-light);
+        background: $color-grey-super-light;
+    }
+}
+
+.subnav-section-item__active a {
+    font-weight: 600;
+}
