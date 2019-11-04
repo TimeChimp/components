@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <span class="subnav__header">
+  <div class="subnav-section">
+    <span class="subnav-section__title">
       {{ title }}
     </span>
-    <ul class="subnav__list">
+    <ul class="subnav-section__list">
       <slot />
     </ul>
   </div>
