@@ -1,11 +1,9 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 
-import { TcBadge } from "../badge";
 import { TcIcon } from "../icons";
 
 @Component({
   components: {
-    TcBadge,
     TcIcon
   }
 })

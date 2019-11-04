@@ -6,11 +6,11 @@
       class="button"
       v-on="$listeners"
     >
-      <slot v-if="!loading" />
+      <slot name="loader" v-if="!loading" />
 
       <i v-else class="button__loader fas fa-spinner fa-spin" />
 
-      <tc-badge v-if="badge" size="small" position="right" :value="badge" />
+      <slot name="addon" />
     </button>
   </div>
 </template>
