@@ -4,7 +4,7 @@ import Button from "./button.vue";
 const factory = (values = {}) => {
   return shallowMount(Button, {
     slots: {
-      default: "<span>Test</span>"
+      addon: "<span>Test</span>"
     },
     propsData: {
       ...values
@@ -13,10 +13,11 @@ const factory = (values = {}) => {
 };
 
 describe("Button", () => {
+  const props = {
+    loading: false
+  };
   it("Renders a button", () => {
-    const wrapper = factory({
-      loading: false
-    });
+    const wrapper = factory(props);
 
     expect(wrapper.contains(".button")).toBe(true);
   });
@@ -30,9 +31,7 @@ describe("Button", () => {
   });
 
   it("Renders a slot", () => {
-    const wrapper = factory({
-      loading: false
-    });
+    const wrapper = factory(props);
 
     const slot = wrapper.find("span");
     expect(slot.text()).toBe("Test");
