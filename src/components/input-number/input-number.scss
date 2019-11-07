@@ -1,0 +1,22 @@
+.input-number {
+    width: 100%;
+
+    font-size: 1.4rem;
+
+    padding: 0 1rem;
+    border: 1px solid $color-grey;
+    background: $color-white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        color: $color-grey;
+        cursor: disabled;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}

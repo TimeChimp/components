@@ -1,6 +1,6 @@
 <template>
   <input
-    data-tid="currency-input"
+    data-tid="input-currency"
     ref="currencyInput"
     :value="formattedValue"
     :name="internalName"

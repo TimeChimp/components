@@ -17,6 +17,6 @@ describe("Input currency", () => {
       value: 100
     });
 
-    expect(wrapper.find('[data-tid="currency-input"]').exists()).toBe(true);
+    expect(wrapper.find('[data-tid="input-currency"]').exists()).toBe(true);
   });
 });
