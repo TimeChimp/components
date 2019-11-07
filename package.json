@@ -16,7 +16,7 @@
         "publish:npm": "npm version patch && npm publish --access public"
     },
     "dependencies": {
-        "@timechimp-bv/helper-functions": "^0.1.4",
+        "@timechimp-bv/helper-functions": "^0.1.5",
         "core-js": "^3.3.2",
         "date-fns": "^2.6.0",
         "date-fns-tz": "^1.0.8",
