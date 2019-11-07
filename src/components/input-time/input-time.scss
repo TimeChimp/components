@@ -1,0 +1,42 @@
+.input-time {
+    width: 100%;
+}
+
+.input-field__input > .input-time > input:disabled {
+    border: none;
+}
+
+.input-time__input {
+    width: 100%;
+    font-size: 1.4rem;
+
+    padding: 0 1rem;
+    border: 1px solid $color-grey;
+    background: $color-white;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:disabled {
+        color: $color-grey;
+        cursor: disabled;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.input-time__bottom-addon {
+    height: 1.6rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &--inactive {
+        color: $color-grey-light;
+        border-color: $color-grey-light !important;
+    }
+}
