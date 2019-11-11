@@ -1,0 +1,9 @@
+@import '../../../node_modules/verte/dist/verte.css';
+
+.verte {
+    display: flex;
+
+    .slider {
+        width: auto !important;
+    }
+}
