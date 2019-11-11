@@ -6,9 +6,11 @@
       class="button"
       v-on="$listeners"
     >
-      <slot name="loader" v-if="!loading" />
+      <slot v-if="!loading" />
 
-      <i v-else class="button__loader fas fa-spinner fa-spin" />
+      <slot v-else name="loader">
+        <i class="button__loader fas fa-spinner fa-spin" />
+      </slot>
 
       <slot name="addon" />
     </button>
