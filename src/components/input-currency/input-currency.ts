@@ -9,7 +9,7 @@ import {
 export default class TcInputCurrency extends Vue {
   @Prop() private name!: string;
   @Prop() private value!: number;
-  @Prop() private placeholder!: string;
+  @Prop({ default: "" }) private placeholder!: string;
   @Prop() private validate!: string;
   @Prop() private disabled!: boolean;
   @Prop() private autofocus!: boolean;

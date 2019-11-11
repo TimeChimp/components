@@ -1,0 +1,42 @@
+.input-time-date {
+    position: relative;
+
+    input {
+        height: 100%;
+        border: none;
+        background: transparent;
+        margin-top: 5px;
+        outline: none;
+
+        &:focus:not([readonly]) + label {
+            color: $color-grey-dark;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.input-time-date__label {
+    left: 0.75rem;
+    color: $color-grey-dark;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 1.4rem;
+    cursor: text;
+    transition: $tc-transition-2;
+    transform-origin: 0% 100%;
+    text-align: initial;
+    transform: translateY(1.4rem) translateX(1.3rem);
+}
+
+.input-time-date--active {
+    transform: translateY(0) translateX(1rem) scale(0.9);
+}
+
+.input-time-date--disabled {
+    transform: translateY(0) translateX(1rem) scale(0.9);
+    color: $color-grey-dark;
+}

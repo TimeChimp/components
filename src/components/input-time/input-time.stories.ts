@@ -7,6 +7,8 @@ storiesOf("Inputs|Time", module).add("Default", () => ({
     TcInputTime
   },
   template: `
+  <div style="width: 20%;">
             <tc-input-time name="test-time-input" :value="25"/>
+            </div>
         `
 }));
