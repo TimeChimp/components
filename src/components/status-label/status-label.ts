@@ -1,5 +1,5 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
-import { Status, statusTypes } from "@/common/models/types/status-label";
+import { Status, statusTypes } from "../../common/models/types/status-label";
 // @ts-ignore
 import VTooltip from "v-tooltip";
 
