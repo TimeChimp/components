@@ -1,7 +1,6 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { formatTime } from "@timechimp-bv/helper-functions";
-
-const VueSlider = () => import("vue-slider-component");
+import VueSlider from "vue-slider-component";
 
 @Component({
   components: {

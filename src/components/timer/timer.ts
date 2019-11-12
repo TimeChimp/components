@@ -13,7 +13,7 @@ export default class TcTimer extends Vue {
 
   private seconds: number = 0;
   private interval: any;
-  private start: Date = this.timerStart || new TcDate().toDate();
+  private start: Date = this.timerStart || new TcDate().date;
 
   private setTimer() {
     const start = new TcDate(this.start).date;
