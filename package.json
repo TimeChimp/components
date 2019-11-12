@@ -6,6 +6,7 @@
         "type": "git",
         "url": "https://github.com/timechimp-bv/components.git"
     },
+    "main": "./dist/tc.common.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build --target lib --name tc ./src/components/index.js",
