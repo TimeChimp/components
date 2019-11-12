@@ -1,10 +1,10 @@
 import { Vue, Component, Prop } from "vue-property-decorator";
 import { formatTime } from "@timechimp-bv/helper-functions";
-import VueSlider from "vue-slider-component";
+// import VueSlider from "vue-slider-component";
 
 @Component({
   components: {
-    VueSlider
+    // VueSlider
   }
 })
 export default class TcSlider extends Vue {

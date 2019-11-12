@@ -1,0 +1,1 @@
+{"version":3,"file":"slider-switch.stories.js","sourceRoot":"","sources":["slider-switch.stories.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAE3C,OAAO,cAAc,MAAM,qBAAqB,CAAC;AAEjD,SAAS,CAAC,uBAAuB,EAAE,MAAM,CAAC,CAAC,GAAG,CAAC,SAAS,EAAE,cAAM,OAAA,CAAC;IAC/D,UAAU,EAAE;QACV,cAAc,gBAAA;KACf;IACD,QAAQ,EAAE,sHAIH;CACR,CAAC,EAT8D,CAS9D,CAAC,CAAC"}

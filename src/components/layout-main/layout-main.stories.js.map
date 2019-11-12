@@ -1,0 +1,1 @@
+{"version":3,"file":"layout-main.stories.js","sourceRoot":"","sources":["layout-main.stories.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAE3C,OAAO,YAAY,MAAM,mBAAmB,CAAC;AAE7C,SAAS,CAAC,wBAAwB,EAAE,MAAM,CAAC,CAAC,GAAG,CAAC,SAAS,EAAE,cAAM,OAAA,CAAC;IAChE,UAAU,EAAE;QACV,YAAY,cAAA;KACb;IACD,QAAQ,EAAE,4CAEH;CACR,CAAC,EAP+D,CAO/D,CAAC,CAAC"}
