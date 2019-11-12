@@ -1,9 +1,11 @@
 import { storiesOf } from "@storybook/vue";
 import TcColorPicker from "./color-picker.vue";
-storiesOf("Color picker", module).add("Default", function () { return ({
+storiesOf("Color picker", module).add("Default", function() {
+  return {
     components: {
-        TcColorPicker: TcColorPicker
+      TcColorPicker: TcColorPicker
     },
-    template: "\n        <tc-color-picker value=\"#33d5b4\" />\n    "
-}); });
+    template: '\n        <tc-color-picker value="#33d5b4" />\n    '
+  };
+});
 //# sourceMappingURL=color-picker.stories.js.map

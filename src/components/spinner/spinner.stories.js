@@ -1,9 +1,12 @@
 import { storiesOf } from "@storybook/vue";
 import { TcSpinner } from ".";
-storiesOf("Spinner", module).add("Default", function () { return ({
+storiesOf("Spinner", module).add("Default", function() {
+  return {
     components: {
-        TcSpinner: TcSpinner
+      TcSpinner: TcSpinner
     },
-    template: "\n            <tc-spinner\n                :show=\"true\"\n             />\n        "
-}); });
+    template:
+      '\n            <tc-spinner\n                :show="true"\n             />\n        '
+  };
+});
 //# sourceMappingURL=spinner.stories.js.map

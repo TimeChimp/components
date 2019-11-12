@@ -1,2 +1,2 @@
-export { default as TcSwitch } from './switch.vue';
+export { default as TcSwitch } from "./switch.vue";
 //# sourceMappingURL=index.js.map
