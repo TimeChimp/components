@@ -14,7 +14,7 @@
         "lint": "vue-cli-service lint",
         "storybook": "start-storybook -p 6006",
         "build:storybook": "build-storybook",
-        "publish:npm": "npm version patch && npm publish --access public"
+        "publish:npm": "npm run build && npm version patch && npm publish --access public"
     },
     "dependencies": {
         "@timechimp-bv/helper-functions": "^0.1.6",

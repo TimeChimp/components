@@ -1,7 +1,7 @@
 module.exports = {
   moduleFileExtensions: ["js", "jsx", "json", "vue", "ts", "tsx"],
   // preset: "@vue/cli-plugin-unit-jest/presets/typescript-and-babel",
-  testMatch: ["**/components/**/*.test.(js|jsx|ts|tsx)"],
+  testMatch: ["**/components/**/*.test.(jsx|ts|tsx)"],
   moduleNameMapper: {
     "^@/(.*)$": "<rootDir>/src/$1"
   },
