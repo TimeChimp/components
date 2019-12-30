@@ -1,6 +1,6 @@
 import { shallowMount } from "@vue/test-utils";
 
-import VirtualList from "./virtual-list";
+import VirtualList from "./virtual-list.vue";
 
 const factory = (values = {}) => {
   return shallowMount(VirtualList, {

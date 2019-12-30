@@ -6,14 +6,16 @@
         "type": "git",
         "url": "https://github.com/timechimp-bv/components.git"
     },
+    "main": "./dist/tc.common.js",
     "scripts": {
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
+        "build-lib": "vue-cli-service build --target lib --name tc src/index.js",
         "test": "vue-cli-service test:unit",
         "lint": "vue-cli-service lint",
         "storybook": "start-storybook -p 6006",
         "build:storybook": "build-storybook",
-        "publish:npm": "npm version patch && npm publish --access public"
+        "publish:npm": "npm run build-lib && npm version patch && npm publish --access public"
     },
     "dependencies": {
         "@timechimp-bv/helper-functions": "^0.1.6",
