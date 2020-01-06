@@ -1,0 +1,1 @@
+{"version":3,"file":"letter-avatar.stories.js","sourceRoot":"","sources":["letter-avatar.stories.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,gBAAgB,CAAC;AAE3C,OAAO,cAAc,MAAM,qBAAqB,CAAC;AAEjD,SAAS,CAAC,eAAe,EAAE,MAAM,CAAC,CAAC,GAAG,CAAC,SAAS,EAAE,cAAM,OAAA,CAAC;IACvD,UAAU,EAAE;QACV,cAAc,gBAAA;KACf;IACD,QAAQ,EAAE,8DAEH;CACR,CAAC,EAPsD,CAOtD,CAAC,CAAC"}
